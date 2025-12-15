@@ -1,6 +1,6 @@
 [Unit]
 Description=The default script of the robot
-After=zenoh
+After=zenoh.service
 Environment="HOME=~"
 
 [Service]
