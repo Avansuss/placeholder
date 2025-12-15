@@ -1,0 +1,1 @@
+place these in `/bin/scripts/` (create it if it doesn't exist)
