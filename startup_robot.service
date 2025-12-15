@@ -1,0 +1,13 @@
+[Unit]
+Description=The default script of the robot
+After=zenoh.service
+Environment="HOME=~"
+
+[Service]
+Type=simple
+ExecStart=/bin/scripts/startup_default.sh
+User=rens
+
+[Install]
+WantedBy=multi-user.target
+
