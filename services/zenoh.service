@@ -4,7 +4,6 @@ After=network.target
 
 [Service]
 Type=simple
-Restart=always
 ExecStart=/bin/scripts/zenoh.sh
 User=rens
 
