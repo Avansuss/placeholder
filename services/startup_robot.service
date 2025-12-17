@@ -1,11 +1,11 @@
 [Unit]
-Description=The default script of the robot
+Description=Starts up the ros2 linorobot bringup script
 After=zenoh.service
 Environment="HOME=~"
 
 [Service]
 Type=simple
-ExecStart=/bin/scripts/startup_default.sh
+ExecStart=/bin/scripts/startup_robot.sh
 User=rens
 
 [Install]

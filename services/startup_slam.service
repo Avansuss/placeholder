@@ -1,0 +1,13 @@
+[Unit]
+Description=Starts the ros2 slam script
+After=startup_robot.service
+Environment="HOME=~"
+
+[Service]
+Type=simple
+ExecStart=/bin/scripts/startup_slam.sh
+User=rens
+
+[Install]
+WantedBy=multi-user.target
+
