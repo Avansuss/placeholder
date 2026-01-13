@@ -1,0 +1,11 @@
+nav_goal_node:
+  ros__parameters:
+    # Stap 1: Welke locaties zijn er?
+    location_names: ["General_Medicine_Deliverypoint", "Alternative_Medicine_Deliverypoint", "Emergency_Department", "Charging_Dock"] 
+
+    # Stap 2: Wat zijn de coördinaten? [X, Y, W]
+    General_Medicine_Deliverypoint: [2.0, 0.0, 1.0]
+    Alternative_Medicine_Deliverypoint: [1.5, 0.5, 1.0]
+    Emergency_Department: [0.5, 0.0, 1.0]
+    Charging_Dock: [0.0, 0.0, 1.0]
+
