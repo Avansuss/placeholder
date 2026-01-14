@@ -1,0 +1,13 @@
+[Unit]
+Description=Starts the ros2 teleoperation script for the controller
+After=startup_robot.service
+Environment="HOME=~"
+
+[Service]
+Type=simple
+ExecStart=/bin/scripts/startup_joystick.sh
+User=rens
+
+[Install]
+WantedBy=multi-user.target
+
