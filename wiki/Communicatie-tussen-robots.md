@@ -1,0 +1,5 @@
+# topics controleren
+Gerbuik `ros2 topic list` om te kijken of je de topics van alle robots kan zien. Als je de topics van de andere robots ziet werkt zenoh zoals het zou moeten. Als je de andere topics niet kan vinden restart dan zenoh met `sudo systemctl restart zenoh`. Hierbij is het belangrijk dat zenoh actief is op de robots, maar ook op de hoofdcoordinator, want de communicatie loopt via de hoofdcoordinator. 
+
+# berichten sturen
+Om berichten te sturen gebruik je het volgende command `ros2 topic pub /TOPIC std_msgs/String "data: 'BERICHT'"`. vervang TOPIC met het topic dat je wil publiseren en BERICHT met het bericht dat je wil versturen. Je kunt het bericht bekijken op een andere robot met `ros2 topic echo /robotNUM/TOPIC`. Hierbij is robotNUM het nummer van de robot waar je een message van krijgt, dus al verstuur je een message vanaf robot 11 wordt dit `/robot11/TOPIC`. ZenohBridge zorgt automatisch voor de namespace mapping zodat elk bericht correct bij de juiste robot/coordinator aankomt.
