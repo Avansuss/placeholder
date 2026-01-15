@@ -1,0 +1,13 @@
+[Unit]
+Description=Starts up the ros2 linorobot bringup script
+After=zenoh.service
+Environment="HOME=~"
+
+[Service]
+Type=simple
+ExecStart=/bin/scripts/startup_robot.sh
+User=rens
+
+[Install]
+WantedBy=multi-user.target
+
